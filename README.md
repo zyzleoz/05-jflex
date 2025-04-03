@@ -30,6 +30,7 @@
 ## Arquivo: exemplo.flex
 
 <pre>
+`
 /* Alguns métodos e variáveis disponíveis:
  * int yyline: armazena o número da linha atual.
  * int yycolumn: armazena o número da coluna atual na linha atual.
@@ -64,7 +65,7 @@ identificador = {letra}({letra}|{numero})*
 
 {digito}        {System.out.println(" -> Encontrei um <Token: DIGITO, Lexema: "        + yytext() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
 {identificador} {System.out.println(" -> Encontrei um <Token: IDENTIFICADOR, Lexema: " + yytext() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
-
+`
 </pre>
 
 ## Arquivo: entrada01.txt:
