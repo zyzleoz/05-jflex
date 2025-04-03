@@ -30,5 +30,5 @@ identificador = {letra}({letra}|{numero})*
  * o analisador léxico. 
  */
 
-{digito}        {System.out.println(" -> Encontrei um <Token: DIGITO, Lexema: "        + yytext() + ", Tamanho:" + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
-{identificador} {System.out.println(" -> Encontrei um <Token: IDENTIFICADOR, Lexema: " + yytext() + ", Tamanho:" + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
+{digito}        {System.out.println(" -> Encontrei um <Token: DIGITO, Lexema: "        + yytext() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
+{identificador} {System.out.println(" -> Encontrei um <Token: IDENTIFICADOR, Lexema: " + yytext() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
