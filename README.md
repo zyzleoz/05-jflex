@@ -30,6 +30,13 @@
 ## Arquivo: exemplo.flex
 
 <pre>
+/* Alguns métodos e variáveis disponíveis:
+ * int yyline: armazena o número da linha atual.
+ * int yycolumn: armazena o número da coluna atual na linha atual.
+ * String yytext(): método que retorna a sequência de caracteres que foi casada com a regra.
+ * int yylength(): método que retorna o comprimento da sequência de caracteres que foi casada com a regra.
+ */
+
 /* Definição: seção para código do usuário. */
 
 
@@ -57,6 +64,7 @@ identificador = {letra}({letra}|{numero})*
 
 {digito}        {System.out.println(" -> Encontrei um <Token: DIGITO, Lexema: "        + yytext() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
 {identificador} {System.out.println(" -> Encontrei um <Token: IDENTIFICADOR, Lexema: " + yytext() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
+
 </pre>
 
 ## Arquivo: entrada01.txt:
