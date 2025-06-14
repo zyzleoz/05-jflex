@@ -4,12 +4,12 @@
 %standalone // Execução independente do analisador sintático.
 
 
-/* ---------- MACROS ---------- */
-CARACTERE        = [a-z]+ [0-9]+
+/*MACROS*/
+CARACTERE  = [a-z]+ [0-9]+
 EMAIL = [a-z]+
 
 
-/* ---------- REGRAS ---------- */
+/*REGRAS*/
 %%
 
 {CARACTERE}"@"{EMAIL}"."[a-z]+ {
